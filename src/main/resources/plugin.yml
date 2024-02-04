@@ -1,0 +1,9 @@
+name: AFKLog
+version: '${version}'
+main: me.arcator.afklog.AFKLog
+api-version: '1.20'
+depend: [ Essentials ]
+libraries:
+  - com.zaxxer:HikariCP:5.1.0
+  - org.mariadb.jdbc:mariadb-java-client:3.3.2
+  - org.jetbrains.kotlin:kotlin-stdlib:2.0.0-Beta3
