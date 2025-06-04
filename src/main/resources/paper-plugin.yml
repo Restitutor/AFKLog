@@ -1,0 +1,12 @@
+name: AFKLog
+version: 3.1
+main: me.arcator.afklog.AFKLog
+loader: me.arcator.afklog.PaperLoader
+description: 'Tracks and subtracts EssentialsX AFK time from LogBlock'
+api-version: '1.21'
+dependencies:
+  server:
+    Essentials:
+      load: BEFORE
+      required: true
+      join-classpath: true

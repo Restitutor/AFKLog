@@ -21,7 +21,7 @@ class AFKListener(private var plugin: JavaPlugin) : Listener {
         val person: IUser = event.affected
         if (!person.isAfk) return
 
-        // Some edge cases like reloads cause the AFK time to be invalid
+        // Some edge cases like reloads or switching servers cause the AFK time to be invalid
         // Compare against start of server
         if (person.afkSince < ManagementFactory.getRuntimeMXBean().startTime) return
 
